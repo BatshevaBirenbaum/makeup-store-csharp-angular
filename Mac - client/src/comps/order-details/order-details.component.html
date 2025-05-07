@@ -1,0 +1,63 @@
+   <div id="all">
+  <div id="formSend">
+    <div class="shipping-form">
+      <h2>פרטי משלוח</h2>
+      <form>
+        <div class="form-group">
+          <label for="idCard">תעודת זהות:</label>
+          <input id="idCard" type="text" placeholder="הכנס תעודת זהות" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="street">רחוב:</label>
+          <input id="street" type="text" placeholder="הכנס שם רחוב" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="neighborhood">שכונה:</label>
+          <input id="neighborhood" type="text" placeholder="הכנס שכונה" >
+        </div>
+    
+        <div class="form-group">
+          <label for="city">עיר:</label>
+          <input id="city" type="text" placeholder="הכנס עיר" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="phone">טלפון נייד:</label>
+          <input id="phone" type="tel" placeholder="הכנס טלפון נייד" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="notes">הערות נוספות:</label>
+          <textarea id="notes" placeholder="הכנס הערות נוספות" rows="4" name="note" [(ngModel)]="newPurchase.note"></textarea>
+        </div>
+    
+        <h3>פרטי כרטיס אשראי</h3>
+        <div class="form-group">
+          <label for="cardNumber">מספר כרטיס:</label>
+          <input id="cardNumber" type="text" placeholder="הכנס מספר כרטיס" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="expiryDate">תאריך תפוגה:</label>
+          <input id="expiryDate" type="month" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="cvv">CVV:</label>
+          <input id="cvv" type="text" placeholder="הכנס CVV" required>
+        </div>
+    
+        <button (click)="fillForm()" class="bb" type="button">אישור</button>
+      </form>
+    </div>
+  </div>
+  <div id="details">
+    <app-cart 
+  [buttonState]="2"
+  (alertEvent)="addPurchase()">
+</app-cart>
+  </div>
+ </div>
+

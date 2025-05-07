@@ -1,0 +1,109 @@
+
+.bb, .confirm-button, .submit-order {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button:hover, .confirm-button:hover, .submit-order:hover {
+  background-color: black;
+}
+
+.order-form form, .shipping-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form label, .shipping-form label {
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.order-form input, .shipping-form input, .shipping-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.shipping-form {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-order {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.submit-order:hover {
+  background-color: rgb(123, 120, 120);
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field input, .input-field textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.input-field label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #555;
+} 
+ 
+#formSend{
+  width: 40%;
+  margin-right: 5px;
+}
+#details{
+  width: 55%;
+  height: 900px;
+
+}
+#all{
+margin-top: 100px;
+  display: flex;
+
+}

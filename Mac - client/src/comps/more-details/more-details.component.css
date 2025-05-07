@@ -1,0 +1,71 @@
+#moreDetails{
+    display: flex;
+    width:100% ;
+    margin-top: 60px;
+}
+
+#moreDiv{
+ display: block;
+ justify-content: center;
+  width: 35%;
+  margin-left: 5%;
+  margin-right: 20%;
+  margin-top: 55px;
+  text-align: right;
+  
+}
+#img
+{
+    width: 80vh;
+}
+#divImg{
+    background-color: rgba(220, 219, 219, 0.315);
+}
+#price{
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+}
+#name{
+    font-weight: bold;
+}
+.thin-line {
+    border: none;      
+    height: 0.5px;         
+    background-color: black; 
+  }
+.fa-solid{
+    font-family: "Font Awesome 6 Free";
+    color: white;
+}
+#sendDiv{
+   text-align: center;
+   margin-top: 50px;
+}
+
+.send{
+    font-size: 15px;
+    font-weight: bold;
+}
+#red{
+    color: red;
+}
+.back{
+    background-color: white !important;
+    border: none;
+}
+.fa-arrow-right{
+    content: "\f061";
+font-family: "Font Awesome 6 Free";
+font-weight: 900;
+color: black;
+margin-left: 30px;
+}
+
+.out-of-stock {
+    opacity: 0.5;   
+}
+
+
+
+  

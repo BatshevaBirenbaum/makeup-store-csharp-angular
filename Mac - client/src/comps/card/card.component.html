@@ -1,0 +1,14 @@
+
+<div class="card">
+    <div id="stars">
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+    <img id="img" [src]="image">
+    <h5>{{title}}</h5>
+    <p>₪ {{price}} </p>
+    <p>{{desceibtion|description}}</p>
+    <app-button  id="uu" (click)="send()"   class="designButton"  word="לפרטים נוספים" icon="fa-solid fa-angle-double-left"></app-button>

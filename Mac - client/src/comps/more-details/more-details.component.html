@@ -1,0 +1,25 @@
+
+<div id="moreDetails">
+    <div id="moreDiv">
+        <h5 id="name">{{product.name}}</h5>  
+        <p id="price">₪ {{product.price}} </p>
+        <hr class="thin-line" />
+        <p>{{product.description}}</p>
+        <!-- <input type="number" id="numberInput" min="0" value="0"> -->
+        <app-button [disabled]="product.stockQuantity === 0" [ngClass]="{'out-of-stock': product.stockQuantity === 0}"  (click)="addToCart()" class="addToCart" word="הוסף לסל" icon="fa-solid fa-cart-plus"></app-button>
+
+        <hr class="thin-line" />
+        <p  id="red" *ngIf="count === 0">אזל מהמלאי</p>
+        <div id="sendDiv">
+            <p class="send"> .משלוח חינם בקנייה מעל 249 ₪, אספקה בין 5-7 ימי עסקים</p>
+            <p class="send"> .ועד 15 ימי עסקים ליישובים מרוחקים</p>
+        </div>
+        
+    </div>
+
+    <div id="divImg">
+        <img id="img" [src]="product.image">
+
+    </div>
+    <i (click)="back()" class="fa-solid fa-arrow-right"></i>
+</div>

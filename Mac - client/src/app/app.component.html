@@ -1,0 +1,64 @@
+<div>
+  <nav>
+    <div id="rigth">
+      
+      <img id="logo" [src]="logo" alt="logo" />
+    </div>
+   
+   <div id="center">
+
+    <a routerLink="/">דף בית</a>
+    <!-- <a routerLink="./login">התחברות</a>
+    <a routerLink="./signup">הרשמה</a> -->
+    @for(c of allCat; track c.categoryId)
+    {
+     <a [routerLink]="['/products', c.categoryId]">{{ c.name }}</a>
+     
+    }
+  </div>
+  <div id="left">
+    <i class="fa-solid fa-user-alt" (click) = "openLogin()"></i>
+    <div class="cart-icon" (click)="openCart()">
+       <i class="fa-solid fa-shopping-cart"></i>
+       <span class="cart-count">{{countInCart}}</span> 
+   </div>
+</div>
+
+  </nav>
+  <hr />
+  <!-- התחברות והרשמה -->
+  <div class="modal" *ngIf="isLoginOpen && (isCartOpen === false)">
+    <div class="modal-content2">
+      <span class="close2" (click)="closeLogin()">&times;</span>
+     
+      <ng-container *ngIf="currentComponent === 'login'">
+        <div class="navigate">
+          <a class="link" (click)="openSignup()">הירשמי</a>
+        <p  class="margin">  ?אין לך חשבון</p>
+        
+        </div>
+        <app-login></app-login>
+    </ng-container>
+    <ng-container *ngIf="currentComponent === 'signup'">
+      <div class="navigate">
+        <a class="link" (click)="openLogincomp()">היתחברי</a>
+        <p class="margin">  ?כבר יש לך חשבון</p>
+        </div>
+      <app-signup></app-signup>
+    </ng-container>
+    </div>
+  </div>
+    <div class="modal" *ngIf="cartService.isCartOpen&& (countInCart>0)">
+    <div class="modal-content">
+      <span class="close" (click)="closeCart()">&times;</span>
+      <app-cart></app-cart>
+    </div>
+  </div>
+  <div class="modal" *ngIf="countInCart===0 && (cartService.isCartOpen)">
+    <div class="modal-content">
+      <span class="close" (click)="closeCart()">&times;</span>
+      <p id="empty">סל הקניות שלך ריק</p>
+      </div> 
+         </div>
+  <router-outlet></router-outlet>
+</div>

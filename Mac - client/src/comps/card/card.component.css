@@ -1,0 +1,45 @@
+.card{
+    display: flex;
+    text-align: center;
+    height: 700px;
+    width: 400px;
+    align-items: center;
+    background-color: rgba(229, 230, 231, 0.293);
+    padding: 10px 10px;
+    border: none; 
+    border-radius: 0; 
+    margin-left: 5px; 
+    margin-top:15px;
+
+    
+}
+.fa-solid{
+    content: "\f005";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.fa-regular{
+    
+    content: "\f005";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+}
+#stars{
+margin-left:70%;
+margin-top: 5%;
+display: flex;
+}
+#img{
+    height: 70vh;
+}
+.designButton{
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+}
+button{
+    background-color: rgb(255, 127, 206);
+}
+
+

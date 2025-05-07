@@ -1,0 +1,28 @@
+@for(c of cart; track c.product.productId)
+{
+  <div id="proDiv">
+   <div id="icons">
+    <i (click)="delete(c.product.productId, c.product.price?? 0 ,c.quantity)" class="fa-solid fa-trash"></i><br>
+   </div>
+   <div id="details">
+    <p id="name">{{c.product.name}}</p>
+    <div class="quantity-container">
+      <input id="input"  (ngModelChange)="EditPrice(c.product.productId, c.product.price ?? 0, $event)"  type="number" [(ngModel)]="c.quantity"   min="0"[max]="c.product.stockQuantity !== undefined ? c.product.stockQuantity : null"  step="1" 
+      onkeydown="return false;"/>
+      <p id="quantity">כמות</p>
+  </div>
+    <p id="price">₪ {{c.product.price}}</p>
+   </div>
+   <div id="picture">
+    <img [src]="c.product.image" alt="image">
+   </div>
+ </div>
+ <hr class="thin-line" />
+}
+<P id="totalPrice">₪ סה"כ לתשלום: {{newPrice}} </P>
+<button 
+  class="toPay" 
+  appChangColor 
+  (click)="buttonState === 1 ? handleButtonClick() : emitAlert()">
+  {{ buttonState === 1 ? 'לתשלום' : 'לאישור וביצוע הזמנה' }}
+</button>

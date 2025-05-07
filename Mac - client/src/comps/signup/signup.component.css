@@ -1,0 +1,14 @@
+#divv{
+    /* margin-top: 150px; */
+    direction: rtl;
+}
+h2 {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 50px; 
+    font-weight: bold;
+}
+#butt {
+    background-color: rgb(132, 47, 47);
+    height: 50px;
+    width: 40%;    
+  }

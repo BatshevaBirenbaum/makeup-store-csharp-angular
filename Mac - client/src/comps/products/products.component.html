@@ -1,0 +1,12 @@
+<img id="imgCategory" [src]="id + '.webp'" alt="Image" />
+<select id="sort" [(ngModel)]="sortBy" (change)="sortPrice()">
+    <option value="" disabled selected >מיין לפי</option>
+    <option value="low" >מהנמוך לגבוה</option>
+    <option value="high">מהגבוה לנמוך</option>
+</select>
+<div id="allCards">
+@for(p of products; track p.productId)
+{
+    <app-card (sendToFather)="moreDetails(p)" [id]="p.productId"  image={{p.image}} title={{p.name}} desceibtion={{p.description}} price={{p.price}}></app-card>
+}
+</div>

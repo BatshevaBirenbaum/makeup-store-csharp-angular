@@ -1,0 +1,114 @@
+
+
+  .fa-solid{
+  font-size: 25px; 
+  }  
+  .cart-icon {
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
+  }
+  .cart-count {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -9px;
+    right: -10px; 
+    background-color: red; 
+    color: white;
+    border-radius: 50%;
+    height: 15px;
+    padding: 2px 5px; 
+    font-size: 10px; 
+    text-align: center;
+  }
+  
+
+  
+
+  .thin-line {
+    border: none;      
+    height: 0.5px;         
+    background-color: black; 
+    margin: 10px 0; 
+  }
+  #picture{
+  background-color:rgba(210, 201, 201, 0.349);
+  width: 30%;
+  height: 25vh;
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center;
+  }
+  #details{
+    margin-right: 10px;
+    width: 60%;
+    text-align: right;
+  
+  }
+  #icons{
+    width: 10%;
+  
+  
+  }
+  #proDiv{
+    display: flex;
+  }
+  img{
+    height: 25vh;
+  }
+
+  .fa-trash{
+    margin-top: 10px;
+  }
+  #name{
+    font-weight: bold;
+  }
+  #price{
+    font-weight: bold;
+  }
+  .quantity-container {
+    margin-left: 190px;
+    display: flex; 
+    
+  }
+  #quantity{
+    font-weight: bold;
+  }
+  #input{
+    width: 50px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  .link {
+    cursor: pointer; 
+    text-decoration: underline !important;
+  }
+  .link:hover {
+    color: darkblue; 
+    background-color:aqua ;
+  }
+
+  .margin{
+    margin-left: 10px;
+  }
+  .toPay{
+    color: white;
+    background-color: black;
+    height: 50px;
+    width: 30%;
+    border: none;
+    border-radius: 30px;
+    margin-left:35%;
+    
+  }
+  #totalPrice{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  
+  
+  
